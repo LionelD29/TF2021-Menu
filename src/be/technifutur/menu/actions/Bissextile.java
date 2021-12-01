@@ -2,7 +2,8 @@ package be.technifutur.menu.actions;
 
 import be.technifutur.util.Utils;
 
-public class Bissextile {
+public class Bissextile implements Runnable{
+	@Override
 	public void run() {
 		int year = 0;
 		

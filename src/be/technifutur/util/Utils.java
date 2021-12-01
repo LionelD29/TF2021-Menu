@@ -15,10 +15,12 @@ public class Utils {
 		
 		while (!valid) {
 			try {
+				System.out.println();
 				System.out.print("Votre choix : ");
 				number = scan.nextInt();
 				valid = true;
 			} catch (Exception e) {
+				System.out.println();
 				System.out.println("Veuillez saisir un nombre entier");
 				System.out.println();
 				scan.next();

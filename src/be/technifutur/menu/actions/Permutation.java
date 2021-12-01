@@ -2,8 +2,8 @@ package be.technifutur.menu.actions;
 
 import be.technifutur.util.Utils;
 
-public class Permutation {
-
+public class Permutation implements Runnable{
+	@Override
 	public void run() {
 		int tmp = 0, x = 0, y = 0;
 		
