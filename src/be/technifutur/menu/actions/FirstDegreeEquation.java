@@ -2,7 +2,7 @@ package be.technifutur.menu.actions;
 
 import be.technifutur.util.Utils;
 
-public class FirstDegreEquation implements Runnable {
+public class FirstDegreeEquation implements Runnable {
 	@Override
 	public void run() {
 		int a = 0, b = 0;

@@ -15,7 +15,6 @@ public class Factorial implements Runnable {
 			
 			System.out.println("Choisir un nombre entier positif: ");
 			num = Utils.intInput();
-			System.out.println();
 		} while(num < 0);
 		
 		factor = num;
