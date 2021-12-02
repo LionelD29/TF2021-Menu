@@ -11,15 +11,14 @@ public class Permutation implements Runnable{
 		x = Utils.intInput();
 		y = Utils.intInput();
 		System.out.println();
-		
-		
+
+		System.out.println("Avant permutation : ");
 		System.out.println("X = " + x + ", Y = " + y);
 		
 		tmp = x;
 		x = y;
 		y = tmp;
-		
-		System.out.println();
+
 		System.out.println("Après permutation : ");
 		System.out.println("X = " + x + ", Y = " + y);
 	}
