@@ -1,11 +1,6 @@
 package be.technifutur.menu;
 
-import be.technifutur.menu.actions.Bissextile;
-import be.technifutur.menu.actions.Factorial;
-import be.technifutur.menu.actions.FirstDegreeEquation;
-import be.technifutur.menu.actions.HelloYou;
-import be.technifutur.menu.actions.Helloworld;
-import be.technifutur.menu.actions.Permutation;
+import be.technifutur.menu.actions.*;
 
 public class MenuFactory {
     public Item getItemExit() {
@@ -34,6 +29,10 @@ public class MenuFactory {
 
     public Item getItemHelloYou() {
         return createItem("Demander au programme de vous dire bonjour", new HelloYou());
+    }
+
+    public Item getItemSomme() {
+        return createItem("Somme de 2 nombres", new Somme());
     }
 
     public MenuControler getMenu() {
@@ -67,5 +66,6 @@ public class MenuFactory {
         model.addItem(getItemFactorial());
         model.addItem(getItemFirstDegreeEquation());
         model.addItem(getItemHelloYou());
+        model.addItem(getItemSomme());
     }
 }
