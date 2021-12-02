@@ -3,10 +3,10 @@ package be.technifutur.menu;
 import java.util.Scanner;
 
 public class MenuVue {
-    private Scanner input = new Scanner(System.in);
+    private final Scanner input = new Scanner(System.in);
 
     public String saisirMenu(MenuModel menu) {
-        String choice = "";
+        String choice;
 
         // print the menu
         System.out.println();

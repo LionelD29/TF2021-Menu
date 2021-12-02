@@ -13,10 +13,9 @@ public class MenuControler {
     }
 
     public Runnable getAction() {
-        int position = 0;
+        int position;
         boolean isValid = false;
         Runnable action = null;
-        Item item;
 
         while (!isValid) {
             try {

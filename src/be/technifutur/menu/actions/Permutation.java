@@ -5,7 +5,7 @@ import be.technifutur.util.Utils;
 public class Permutation implements Runnable{
 	@Override
 	public void run() {
-		int tmp = 0, x = 0, y = 0;
+		int tmp, x, y;
 		
 		System.out.println("Saisir 2 variables à permuter : ");
 		x = Utils.intInput();
