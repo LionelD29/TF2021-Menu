@@ -31,10 +31,6 @@ public class MenuFactory {
         return createItem("Demander au programme de vous dire bonjour", new HelloYou());
     }
 
-    public Item getItemSomme() {
-        return createItem("Somme de 2 nombres", new Somme());
-    }
-
     public MenuControler getMenu() {
         // Create MVC
         MenuControler controler = new MenuControler();
@@ -66,6 +62,5 @@ public class MenuFactory {
         model.addItem(getItemFactorial());
         model.addItem(getItemFirstDegreeEquation());
         model.addItem(getItemHelloYou());
-        model.addItem(getItemSomme());
     }
 }
