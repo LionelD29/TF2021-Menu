@@ -55,12 +55,12 @@ public class MenuFactory {
     }
 
     private void initMenu(MenuModel model) {
-        model.addItem(getItemExit());
-        model.addItem(getItemHelloWorld());
-        model.addItem(getItemPermutation());
-        model.addItem(getItemBissextile());
-        model.addItem(getItemFactorial());
-        model.addItem(getItemFirstDegreeEquation());
-        model.addItem(getItemHelloYou());
+        model.addNode(getItemExit());
+        model.addNode(getItemHelloWorld());
+        model.addNode(getItemPermutation());
+        model.addNode(getItemBissextile());
+        model.addNode(getItemFactorial());
+        model.addNode(getItemFirstDegreeEquation());
+        model.addNode(getItemHelloYou());
     }
 }

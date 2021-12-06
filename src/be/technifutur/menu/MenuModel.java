@@ -3,23 +3,29 @@ package be.technifutur.menu;
 import java.util.ArrayList;
 
 public class MenuModel {
-    private final ArrayList<Item> itemList = new ArrayList<>();
+    private final ArrayList<MenuNode> menuNodeList = new ArrayList<>();
+    // private String name;
 
-    public void addItem(Item item) {
-        itemList.add(item);
+    // TODO ajouter un constructeur qui prend en paramètre un name et qui l'attribue à l'attribut privé name
+
+    public void addNode(MenuNode menuNode) {
+        menuNodeList.add(menuNode);
     }
 
-    public Item getItem(int pos) {
-        Item item;
-        if (pos >= 0 && pos < itemList.size()) {
-            item = itemList.get(pos);
+    public MenuNode getNode(int pos) {
+        MenuNode menuNode;
+        if (pos >= 0 && pos < menuNodeList.size()) {
+            menuNode = menuNodeList.get(pos);
         } else {
-            item = null;
+            menuNode = null;
         }
-        return item;
+        return menuNode;
     }
+
+    // TODO implémenter la méthode String getName() qui donne le nom du MenuNode
+
 
     public int size() {
-        return itemList.size();
+        return menuNodeList.size();
     }
 }

@@ -24,13 +24,12 @@ public class MenuControler {
 
                 // transform the choice into a position
                 position = Integer.parseInt(userChoice);
-                action = this.model.getItem(position).getAction();
+                action = this.model.getNode(position).getAction();
                 isValid = true;
             } catch(Exception e) {
                 this.vue.invalidInput();
             }
         }
-
         return action;
     }
 }

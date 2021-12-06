@@ -12,7 +12,7 @@ public class MenuVue {
         System.out.println();
         System.out.println("Que voulez-vous faire ?");
         for(int i = 0; i < menu.size(); i++) {
-            System.out.printf("(%2d) %s%n", i, menu.getItem(i).getName());
+            System.out.printf("(%2d) %s%n", i, menu.getNode(i).getName());
         }
 
         // user input
@@ -22,6 +22,8 @@ public class MenuVue {
 
         return choice;
     }
+
+
 
     public static void exit() {
         System.out.println("Fin du programme");

@@ -1,6 +1,6 @@
 package be.technifutur.menu;
 
-public class Item {
+public class Item implements MenuNode {
     private String name;
     private Runnable action;
 
